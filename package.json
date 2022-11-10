@@ -2,7 +2,11 @@
   "name": "@guteres/nest-auth-modul",
   "version": "1.0.4",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "target": "esnext",
   "module": "commonjs",
   "scripts": {
