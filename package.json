@@ -11,8 +11,10 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "access": "public",
-  "registry": "https://registry.npmjs.org/",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Guteres007/nest-auth-modul"
