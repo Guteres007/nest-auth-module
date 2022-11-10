@@ -10,7 +10,7 @@ import { PassportModule } from '@nestjs/passport'
 import { jwtConstants } from '@app/auth/auth.config'
 import { APP_GUARD } from '@nestjs/core'
 import { PermissionsGuard } from '@app/auth/guards/permissions.guard'
-import { UserModule } from '@app/user'
+import { UserModule } from '@app/user/user.module'
 
 @Module({
   imports: [

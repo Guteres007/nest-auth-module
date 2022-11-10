@@ -19,13 +19,13 @@ const passport_1 = require("@nestjs/passport");
 const auth_config_1 = require("@app/auth/auth.config");
 const core_1 = require("@nestjs/core");
 const permissions_guard_1 = require("@app/auth/guards/permissions.guard");
-const user_1 = require("@app/user");
+const user_module_1 = require("@app/user/user.module");
 let AuthModule = class AuthModule {
 };
 AuthModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            user_1.UserModule,
+            user_module_1.UserModule,
             jwt_1.JwtModule.registerAsync({
                 useFactory: () => {
                     return {
@@ -48,7 +48,7 @@ AuthModule = __decorate([
                 useClass: permissions_guard_1.PermissionsGuard,
             },
         ],
-        exports: [jwt_1.JwtModule, user_1.UserModule],
+        exports: [jwt_1.JwtModule, user_module_1.UserModule],
     })
 ], AuthModule);
 exports.AuthModule = AuthModule;
