@@ -1,0 +1,1 @@
+{"version":3,"file":"require-permissions.decorator.js","sourceRoot":"","sources":["../../../../src/auth/src/decorators/require-permissions.decorator.ts"],"names":[],"mappings":";;;AAAA,2CAA4C;AAG/B,QAAA,eAAe,GAAG,qBAAqB,CAAA;AAE7C,MAAM,kBAAkB,GAAG,CAAC,GAAG,WAAyB,EAAE,EAAE;IACjE,OAAO,IAAA,oBAAW,EAAC,uBAAe,EAAE,WAAW,CAAC,CAAA;AAClD,CAAC,CAAA;AAFY,QAAA,kBAAkB,sBAE9B"}
