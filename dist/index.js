@@ -14,11 +14,10 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./user/src/user.module"), exports);
-__exportStar(require("./user/src/user.service"), exports);
-__exportStar(require("./user/src/user.resolver"), exports);
-__exportStar(require("./user/src/entities/user.entity"), exports);
-__exportStar(require("./auth/src/auth.module"), exports);
-__exportStar(require("./auth/src/auth.service"), exports);
-__exportStar(require("./app.module"), exports);
+__exportStar(require("@app/user/user.module"), exports);
+__exportStar(require("@app/user/user.service"), exports);
+__exportStar(require("@app/user/user.resolver"), exports);
+__exportStar(require("@app/user/entities/user.entity"), exports);
+__exportStar(require("@app/auth/auth.module"), exports);
+__exportStar(require("@app/auth/auth.service"), exports);
 //# sourceMappingURL=index.js.map
