@@ -20,4 +20,5 @@ __exportStar(require("@app/user/user.resolver"), exports);
 __exportStar(require("@app/user/entities/user.entity"), exports);
 __exportStar(require("@app/auth/auth.module"), exports);
 __exportStar(require("@app/auth/auth.service"), exports);
+__exportStar(require("./app.module"), exports);
 //# sourceMappingURL=index.js.map

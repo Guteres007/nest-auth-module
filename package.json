@@ -1,6 +1,6 @@
 {
   "name": "@guteres/nest-auth-modul",
-  "version": "1.1.1",
+  "version": "1.1.13",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
