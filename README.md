@@ -3,11 +3,14 @@
 !!!! Only for GraphQL !!!!
 
 ### Config 
-Add this to app.module.ts and rename database "set-your-db-here"
+ - Install [MongooseModule]('https://docs.nestjs.com/techniques/mongodb')
+ - Install [GraphQLModule]('https://docs.nestjs.com/graphql/quick-start#installation')
+
+Add this to app.module.ts and rename database "SET-YOUR-DB"
 
 ```
 imports: [
-    MongooseModule.forRoot('mongodb://localhost/set-your-db-here'),
+    MongooseModule.forRoot('mongodb://localhost/[SET-YOUR-DB]'),
     GraphQLModule.forRoot<ApolloDriverConfig>({
         driver: ApolloDriver,
         autoSchemaFile: 'schema.gql',
@@ -15,7 +18,7 @@ imports: [
         debug: true,
         playground: true,
     }),
-    AuthModule,
+    AuthModule.register({ secret: 'own', expiresIn: '100m' }),
 ],
 ```
 
