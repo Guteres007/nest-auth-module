@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PermissionsGuard = void 0;
 const common_1 = require("@nestjs/common");
 const core_1 = require("@nestjs/core");
-const require_permissions_decorator_1 = require("@app/auth/decorators/require-permissions.decorator");
+const require_permissions_decorator_1 = require("../decorators/require-permissions.decorator");
 const graphql_1 = require("@nestjs/graphql");
 const jwt_1 = require("@nestjs/jwt");
-const user_service_1 = require("@app/user/user.service");
+const user_service_1 = require("../../../user/src/user.service");
 let PermissionsGuard = class PermissionsGuard {
     constructor(reflector, jwtService, userService) {
         this.reflector = reflector;

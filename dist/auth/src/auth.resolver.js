@@ -14,8 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
-const auth_service_1 = require("@app/auth/auth.service");
-const auth_response_1 = require("@app/auth/dto/auth-response");
+const auth_service_1 = require("./auth.service");
+const auth_response_1 = require("./dto/auth-response");
 const common_1 = require("@nestjs/common");
 (0, graphql_1.Resolver)(() => auth_response_1.AuthResponse);
 let AuthResolver = class AuthResolver {

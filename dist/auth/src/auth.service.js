@@ -11,9 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthService = void 0;
 const common_1 = require("@nestjs/common");
-const user_service_1 = require("@app/user/user.service");
+const user_service_1 = require("../../user/src/user.service");
 const jwt_1 = require("@nestjs/jwt");
-const auth_config_1 = require("@app/auth/auth.config");
+const auth_config_1 = require("./auth.config");
 const argon2 = require("argon2");
 let AuthService = class AuthService {
     constructor(userService, jwtService) {
