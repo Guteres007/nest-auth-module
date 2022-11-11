@@ -14,14 +14,14 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
-const user_service_1 = require("@app/user/user.service");
-const user_entity_1 = require("@app/user/entities/user.entity");
-const create_user_input_1 = require("@app/user/dto/create-user.input");
-const update_user_input_1 = require("@app/user/dto/update-user.input");
+const user_service_1 = require("./user.service");
+const user_entity_1 = require("./entities/user.entity");
+const create_user_input_1 = require("./dto/create-user.input");
+const update_user_input_1 = require("./dto/update-user.input");
 const common_1 = require("@nestjs/common");
-const jwt_auth_guard_1 = require("@app/auth/jwt-auth.guard");
-const require_permissions_decorator_1 = require("@app/auth/decorators/require-permissions.decorator");
-const permission_enum_1 = require("@app/auth/enums/permission.enum");
+const jwt_auth_guard_1 = require("../../auth/src/jwt-auth.guard");
+const require_permissions_decorator_1 = require("../../auth/src/decorators/require-permissions.decorator");
+const permission_enum_1 = require("../../auth/src/enums/permission.enum");
 let UserResolver = class UserResolver {
     constructor(userService) {
         this.userService = userService;

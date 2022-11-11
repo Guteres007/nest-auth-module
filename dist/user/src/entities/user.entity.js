@@ -13,7 +13,7 @@ exports.UserSchema = exports.User = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
 const graphql_1 = require("@nestjs/graphql");
-const permission_enum_1 = require("@app/auth/enums/permission.enum");
+const permission_enum_1 = require("../../../auth/src/enums/permission.enum");
 let User = class User extends mongoose_2.Document {
 };
 __decorate([

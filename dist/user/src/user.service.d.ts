@@ -1,7 +1,7 @@
-import { CreateUserInput } from '@app/user/dto/create-user.input';
-import { UpdateUserInput } from '@app/user/dto/update-user.input';
+import { CreateUserInput } from './dto/create-user.input';
+import { UpdateUserInput } from './dto/update-user.input';
 import { Model } from 'mongoose';
-import { User, UserDocument } from '@app/user/entities/user.entity';
+import { User, UserDocument } from './entities/user.entity';
 export declare class UserService {
     private userModel;
     constructor(userModel: Model<UserDocument>);
