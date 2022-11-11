@@ -5,7 +5,7 @@ import { Inject } from '@nestjs/common'
 
 Resolver(() => AuthResponse)
 export class AuthResolver {
-  constructor(@Inject(AuthService) private authService: AuthService) {}
+  constructor(@Inject(AuthService) protected authService: AuthService) {}
 
   @Mutation(() => AuthResponse)
   async login(
